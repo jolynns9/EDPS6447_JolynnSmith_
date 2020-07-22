@@ -1,19 +1,18 @@
-btn_start.addEventListener("click", function(){
-    // Add block of code
-    console.log("Click event - btn_start");
+btn_start.addEventListener("click", function () {
+	routeView("quiz");
 });
-btn_submit.addEventListener("click", function(){
-   console.log("Click event - btn_submit"); 
+btn_submit.addEventListener("click", function () {
+	getAnswer();
 });
-btn_previous.addEventListener("click", function(){
-   console.log("Click event - btn_previous"); 
+btn_previous.addEventListener("click", function () {
+	decrementQuestion();
 });
-btn_hint.addEventListener("click", function(){
-   console.log("Click event - btn_hint"); 
+btn_hint.addEventListener("click", function () {
+	getHint();
 });
-btn_next.addEventListener("click", function(){
-   console.log("Click event - btn_next"); 
+btn_next.addEventListener("click", function () {
+	incrementQuestion();
 });
-document.addEventListener("DOMContentLoaded", function(){
-   console.log("DOM fully loaded and parsed"); 
+document.addEventListener("DOMContentLoaded", function () {
+	routeView("landing");
 });
